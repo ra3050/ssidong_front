@@ -8,9 +8,9 @@ const MainLayout = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Header/>
-            <Outlet/>
-            <Footer/>
+            <Header />
+            <Outlet />
+            <Footer />
         </ThemeProvider>
     )
 }

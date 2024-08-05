@@ -17,16 +17,16 @@ export const Banner = styled.video`
     width: ${({ theme }) => `calc(${theme.windowSource.window_width})`};
     height: ${({ theme }) => `calc(${theme.windowSource.window_width} / 2.5)`};
 
-    @media ${({ theme }) => theme.device.tablet } {
+    @media ${({ theme }) => theme.device.tablet} {
         height: auto;  /* 모바일 기준 height는 하위 요소만큼 길어져아한다.*/
     };
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         top: 32px;
         height: auto;  /* 모바일 기준 height는 하위 요소만큼 길어져아한다.*/
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         top: 32px;
         height: auto;  /* 모바일 기준 height는 하위 요소만큼 길어져아한다.*/
     };
@@ -35,28 +35,28 @@ export const Banner = styled.video`
 `
 
 export const AboutBox = styled.div`
-    @media ${({ theme }) => theme.device.computer } {
+    @media ${({ theme }) => theme.device.computer} {
         width: 1400px;
         height: auto;
     };
 
-    @media ${({ theme }) => theme.device.laptop } {
+    @media ${({ theme }) => theme.device.laptop} {
         width: 1024px;
         height: auto;
     };
 
 
-    @media ${({ theme }) => theme.device.tablet } {
+    @media ${({ theme }) => theme.device.tablet} {
         width: ${({ theme }) => `calc(${theme.windowSource.window_width})`};
         height: auto;  /* 모바일 기준 height는 하위 요소만큼 길어져아한다.*/
     };
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         width: 100%;
         height: auto;  /* 모바일 기준 height는 하위 요소만큼 길어져아한다.*/
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         width: 100%;
         height: auto;  /* 모바일 기준 height는 하위 요소만큼 길어져아한다.*/
     };
@@ -81,12 +81,12 @@ export const ContentBox = styled.div`
     width: 100%;
     margin: 32px;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         margin: 0;
         overflow: hidden;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         margin: 0;
         overflow: hidden;
     };
@@ -109,29 +109,29 @@ export const ContentGroup = styled.div`
         transform: scale(1.1);
     }
 
-    @media ${({ theme }) => theme.device.computer } {
+    @media ${({ theme }) => theme.device.computer} {
         width: calc(1400px / 4);
         height: calc(1400px / 4);
     };
 
-    @media ${({ theme }) => theme.device.laptop } {
+    @media ${({ theme }) => theme.device.laptop} {
         width: calc(1400px / 4);
         height: calc(1400px / 4);
     };
 
-    @media ${({ theme }) => theme.device.tablet } {
+    @media ${({ theme }) => theme.device.tablet} {
         width: calc(1400px / 4);
         height: calc(1400px / 4);
     };
     
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         height: 0;
         :hover {
             transform: none;
         }
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         height: 0;
         :hover {
             transform: none;

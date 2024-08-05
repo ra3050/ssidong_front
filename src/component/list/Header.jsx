@@ -25,7 +25,7 @@ const HeaderBox = styled.div`
     width: 100%;
     height: 100%;
     
-    @media ${({ theme }) => theme.device.computer } {
+    @media ${({ theme }) => theme.device.computer} {
         width: 1400px;
     };
     
@@ -42,11 +42,11 @@ const LogoImage = styled.img`
     height: calc(100% - 8px);
     margin: 4px 32px;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         margin: 4px 16px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         margin: 4px 16px;
     };
 `
@@ -87,12 +87,12 @@ const Header = () => {
     }
 
     const handleMenuBox = (e) => {
-        setMenu(!menu);    
+        setMenu(!menu);
     }
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
-        
+
         //컴포넌트가 마운트 시 이벤트 리스너 제거
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -101,28 +101,28 @@ const Header = () => {
 
     return (
         <Wrapper>
-            { clientWidth < 768 
+            {clientWidth < 768
                 ?
-                    <HeaderBox>
-                        <LogoImage src={logo}/>
-                        <MenuBox ref={menuRef} onClick={handleMenuBox}>
-                            <MenuIcon />
-                        </MenuBox>
-                        {menu && <MobileMenu setMenu={setMenu}/>}
-                    </HeaderBox> 
+                <HeaderBox>
+                    <LogoImage src={logo} />
+                    <MenuBox ref={menuRef} onClick={handleMenuBox}>
+                        <MenuIcon />
+                    </MenuBox>
+                    {menu && <MobileMenu setMenu={setMenu} />}
+                </HeaderBox>
                 :
-                    <HeaderBox>
-                        <LogoImage src={logo}/>
-                        <Menu>
-                            <Menu_item onClick={()=> navigation('/', { replace: true})}>HOME</Menu_item>
-                            <Menu_item onClick={()=> navigation('/intro', { replace: true})}>회사소개</Menu_item>
-                            <Menu_item onClick={()=> navigation('/portfolio', { replace: true})}>포트폴리오</Menu_item>
-                            <Menu_item onClick={()=> navigation('/contact', { replace: true})}>Contact</Menu_item>
-                        </Menu>
-                    </HeaderBox>
+                <HeaderBox>
+                    <LogoImage src={logo} />
+                    <Menu>
+                        <Menu_item onClick={() => navigation('/', { replace: true })}>HOME</Menu_item>
+                        <Menu_item onClick={() => navigation('/intro', { replace: true })}>회사소개</Menu_item>
+                        <Menu_item onClick={() => navigation('/portfolio', { replace: true })}>포트폴리오</Menu_item>
+                        <Menu_item onClick={() => navigation('/contact', { replace: true })}>Contact</Menu_item>
+                    </Menu>
+                </HeaderBox>
             }
 
-            
+
         </Wrapper>
     )
 }

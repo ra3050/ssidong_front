@@ -22,13 +22,13 @@ export const Slider = styled.div`
     height: 464px;
     margin: 0 0 64px 0;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         height: 200px;
         height: 200px;
         margin: 0 0 64px 0;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         height: 264px;
         height: 200px;
         margin: 0 0 64px 0;
@@ -62,13 +62,13 @@ export const Image = styled.img`
     height: 400px;
     margin: 32px;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         width: 200px;
         height: 200px;
         margin: 8px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         width: 200px;
         height: 200px;
         margin: 8px;
@@ -79,5 +79,5 @@ export const Image = styled.img`
 
     object-fit: cover; 
     /* transition: animation 10000ms linear; */
-    /* animation: ${()=> outOfBox} 10s linear; */
+    /* animation: ${() => outOfBox} 10s linear; */
 `

@@ -22,11 +22,11 @@ const Menu_name = styled.button`
     margin: 16px;
     color: white;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         font-size: 12px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         font-size: 12px;
     };
 `;

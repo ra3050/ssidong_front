@@ -24,11 +24,11 @@ export const Title = styled.p`
     font-weight: bold;
     color: white;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         font-size: 32px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         font-size: 32px;
     };
 `
@@ -45,11 +45,11 @@ export const PfCategoryBox = styled.div`
     display: flex;
     justify-content: center;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         margin: 32px 16px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         margin: 32px 16px;
     };
 `
@@ -63,12 +63,12 @@ export const PfCategory = styled.button`
     color: white;
     opacity: 0.5;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         font-size: 11px;
         margin: 0 8px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         font-size: 11px;
         margin: 0 8px;
     };
@@ -81,12 +81,12 @@ export const PfContentBox = styled.div`
     max-width: 1920px;
     margin: 0 90px;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         width: 100vw;
         margin: 0;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         width: 100vw;
         margin: 0;
     };
@@ -102,12 +102,12 @@ export const PfContent = styled.button`
     max-width: calc((1920px / 3) - 32px);
     margin: 0 16px 32px 16px;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         width:  calc(100vw - 32px);
         height: calc((100vw - 32px) * 9 / 16);
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         width:  calc(100vw - 32px);
         height: calc((100vw - 32px) * 9 / 16);
     };
@@ -130,11 +130,11 @@ export const PfContent = styled.button`
         font-weight: bold;
         line-height: calc(${props => props.height}px);
 
-        @media ${({ theme }) => theme.device.mobile_big } {
+        @media ${({ theme }) => theme.device.mobile_big} {
             line-height: calc((100vw - 32px) * 9 / 16);
         };
 
-        @media ${({ theme }) => theme.device.mobile_small } {
+        @media ${({ theme }) => theme.device.mobile_small} {
             line-height: calc((100vw - 32px) * 9 / 16);
         };
 

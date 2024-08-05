@@ -29,11 +29,11 @@ export const Title = styled.p`
     color: white;
 
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         font-size: 32px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         font-size: 32px;
     };
 `
@@ -54,12 +54,12 @@ export const Center_Left_Logo_Box = styled.div`
     height: 100%;
     margin: 0 32px;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         width: 0;
         margin: 0;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         width: 0;
         margin: 0;
     };
@@ -73,11 +73,11 @@ export const Center_Left_Logo_Box = styled.div`
 export const Center_Left_Logo = styled.img`
     width: 50%;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         width: 0;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         width: 0;
     };
 
@@ -91,12 +91,12 @@ export const Center_right_contact_box = styled.div`
     height: 100%;
     margin: 0 32px;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         width: 100%;
         margin: 0 16px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         width: 100%;
         margin: 0 16px;
     };
@@ -115,12 +115,12 @@ export const Center_right_contact_subtitle = styled.p`
     color: white;
     opacity: .8;    
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         margin: 6px 0 10px 0;
         font-size: 12px;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         margin: 6px 0 10px 0;
         font-size: 12px;
     };

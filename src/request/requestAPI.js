@@ -12,7 +12,7 @@ const AxiosHttpData = {
 
 const Axios = axios.create(AxiosHttpData)
 
-export const requestPortfolio = async(callback) => {
+export const requestPortfolio = async (callback) => {
     const value = await Axios.get('/api/requestPortfolio').then((req, error) => {
         return (req.data);
     }).catch((error) => {
@@ -22,9 +22,9 @@ export const requestPortfolio = async(callback) => {
     callback(value);
 }
 
-export const requestSendEmail = async(props, callback) => {
+export const requestSendEmail = async (props, callback) => {
     const value = await Axios.post('/api/sendmailToContact', props).then((req, error) => {
-        return  (req.data);
+        return (req.data);
     }).catch((error) => {
         return false;
     })

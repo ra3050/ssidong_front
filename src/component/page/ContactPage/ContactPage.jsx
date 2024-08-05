@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { Wrapper, Title, CenterContactBox, Center_Left_Logo, Center_right_contact_box, Center_right_contact_subtitle,
-          Center_right_contact_select, Center_right_contact_input ,Center_right_contact_descryption, Center_right_contact_sender, Center_Left_Logo_Box } from "./ContactHTML";
+import {
+    Wrapper, Title, CenterContactBox, Center_Left_Logo, Center_right_contact_box, Center_right_contact_subtitle,
+    Center_right_contact_select, Center_right_contact_input, Center_right_contact_descryption, Center_right_contact_sender, Center_Left_Logo_Box
+} from "./ContactHTML";
 import ImageSlider from "./ImageSlider";
 import { requestSendEmail } from "../../../request/requestAPI";
 import logo from "../../../resource/contact/contact_logo.png";
@@ -34,7 +36,7 @@ const ContactPage = () => {
             <Title>CONTACT US</Title>
             <CenterContactBox>
                 <Center_Left_Logo_Box>
-                    <Center_Left_Logo src={logo}/>
+                    <Center_Left_Logo src={logo} />
                 </Center_Left_Logo_Box>
                 <Center_right_contact_box>
                     <Center_right_contact_subtitle>문의</Center_right_contact_subtitle>
@@ -46,19 +48,19 @@ const ContactPage = () => {
                         <option value="etc.">etc.</option>
                     </Center_right_contact_select>
                     <Center_right_contact_subtitle>성명/회사명</Center_right_contact_subtitle>
-                    <Center_right_contact_input type="text" onChange={e => setCompanyName(e.target.value)}/>
+                    <Center_right_contact_input type="text" onChange={e => setCompanyName(e.target.value)} />
                     <Center_right_contact_subtitle>연착처</Center_right_contact_subtitle>
-                    <Center_right_contact_input type="text" onChange={e => setPhone(e.target.value)}/>
+                    <Center_right_contact_input type="text" onChange={e => setPhone(e.target.value)} />
                     <Center_right_contact_subtitle>프로젝트명</Center_right_contact_subtitle>
-                    <Center_right_contact_input type="text" onChange={e => setProjectName(e.target.value)}/>
+                    <Center_right_contact_input type="text" onChange={e => setProjectName(e.target.value)} />
                     <Center_right_contact_subtitle>이메일</Center_right_contact_subtitle>
-                    <Center_right_contact_input type="text" onChange={e => setEmail(e.target.value)}/>
+                    <Center_right_contact_input type="text" onChange={e => setEmail(e.target.value)} />
                     <Center_right_contact_subtitle>상세내용</Center_right_contact_subtitle>
-                    <Center_right_contact_descryption type="text" onChange={e => setDescrypt(e.target.value)}/>
+                    <Center_right_contact_descryption type="text" onChange={e => setDescrypt(e.target.value)} />
                     <Center_right_contact_sender onClick={handleSender}>보내기</Center_right_contact_sender>
                 </Center_right_contact_box>
             </CenterContactBox>
-            <ImageSlider/>
+            <ImageSlider />
         </Wrapper>
     )
 }

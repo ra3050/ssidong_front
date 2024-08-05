@@ -8,16 +8,16 @@ import ScrollToTop from "./controller/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter> 
+    <BrowserRouter>
       <Routes>
-        <Route element={<MainLayout/>}>
-            <Route path='/*' element={<MainPage/>}></Route>
-            <Route path='/intro' element={<CompanyPage/>} />
-            <Route path='/portfolio' element={<PortfolioPage/>}/>
-            <Route path='/contact' element={<ContactPage/>}/>
+        <Route element={<MainLayout />}>
+          <Route path='/*' element={<MainPage />}></Route>
+          <Route path='/intro' element={<CompanyPage />} />
+          <Route path='/portfolio' element={<PortfolioPage />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Route>
       </Routes>
-      <ScrollToTop/>
+      <ScrollToTop />
     </BrowserRouter>
   );
 }

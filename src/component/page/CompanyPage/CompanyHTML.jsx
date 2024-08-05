@@ -5,11 +5,11 @@ export const Wrapper = styled.div`
     width: 100%;
     height: ${() => `calc(${window.innerWidth}px * 973 / 1920)`};
     
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         height: calc(75vh);
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         height: calc(75vh);
     };
 
@@ -42,11 +42,11 @@ export const DescryptionBox = styled.div`
     width: ${(props) => `calc(${props.width}px)`};
     height: 100%;
     
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         left: ${() => `calc(${window.innerWidth}px / 12)`};
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         left: ${() => `calc(${window.innerWidth}px / 12)`};
     };
 
@@ -65,12 +65,12 @@ export const Title = styled.p`
     font-weight: bold;
     line-height: 1.4em;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         font-size: 36px;
         line-height: 1.4em;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         font-size: 36px;
         line-height: 1.4em;
     };
@@ -84,12 +84,12 @@ export const Descrypt = styled.p`
     white-space: pre-wrap;
     line-height: 1.8em;
     
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         font-size: 16px;
         line-height: 1.8em;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         font-size: 16px;
         line-height: 1.8em;
     };

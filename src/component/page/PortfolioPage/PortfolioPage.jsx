@@ -18,15 +18,15 @@ const makeContentList = (portfolioList, value, handle) => {
     const pfcontentWidth = (window.innerWidth * 0.7 - 180) / 3 - 32;
     const pfcontentHeight = pfcontentWidth * 9 / 16;
 
-    if (!portfolioList) return [] 
+    if (!portfolioList) return []
 
     for (let i = 0; i < portfolioList.length; i++) {
         if (value === '전체' || value === portfolioList[i].category) {
             const num = concernList.length
             currentPFList.push(portfolioList[i])
             concernList.push(
-                <PfContent title={portfolioList[i].title} width={pfcontentWidth} height={pfcontentHeight} onClick={() => handle({rows: num})} key={i}>
-                      <PfContentImg src={portfolioList[i].thumnailLink}/>
+                <PfContent title={portfolioList[i].title} width={pfcontentWidth} height={pfcontentHeight} onClick={() => handle({ rows: num })} key={i}>
+                    <PfContentImg src={portfolioList[i].thumnailLink} />
                 </PfContent>
             );
         }
@@ -35,7 +35,7 @@ const makeContentList = (portfolioList, value, handle) => {
     return concernList;
 }
 
-const PortfolioPage = () => {    
+const PortfolioPage = () => {
     const [contentList, setContentList] = useState([]);
     const [detail, setDetail] = useState(<></>);
     const categoryRef = [useRef(), useRef(), useRef(), useRef(), useRef()]
@@ -43,16 +43,16 @@ const PortfolioPage = () => {
 
     useEffect(() => {
         requestPortfolio((data) => {
-        if (!data) {
-            portfolioList = [];
-            return;
-        } else {
-            categoryRef[0].current.style.opacity = 1;
-            portfolioList = data;
-            const newContentList = makeContentList(portfolioList, '전체', handleContent);
-            
-            setContentList(newContentList);
-        }
+            if (!data) {
+                portfolioList = [];
+                return;
+            } else {
+                categoryRef[0].current.style.opacity = 1;
+                portfolioList = data;
+                const newContentList = makeContentList(portfolioList, '전체', handleContent);
+
+                setContentList(newContentList);
+            }
         });
     }, []);
 
@@ -75,7 +75,7 @@ const PortfolioPage = () => {
     const handleContent = (e) => {
         const rows = e.rows
         console.log(rows)
-        setDetail(<PortfolioDetail handleDetailDrop={handleDetailDrop} portfolio={pfFilterList} rows={rows} scrolltoTop={document.documentElement.scrollTop || document.body.scrollTop}/>)
+        setDetail(<PortfolioDetail handleDetailDrop={handleDetailDrop} portfolio={pfFilterList} rows={rows} scrolltoTop={document.documentElement.scrollTop || document.body.scrollTop} />)
     }
 
     const handleDetailDrop = () => {

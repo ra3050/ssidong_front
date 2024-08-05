@@ -21,13 +21,13 @@ const LogoImage = styled.img`
     height: calc(100% - 32px);
     margin: 0 16px;
 
-    @media ${({ theme }) => theme.device.mobile_big } {
+    @media ${({ theme }) => theme.device.mobile_big} {
         width: 0;
         height: 0;
         margin: 0;
     };
 
-    @media ${({ theme }) => theme.device.mobile_small } {
+    @media ${({ theme }) => theme.device.mobile_small} {
         width: 0;
         height: 0;
         margin: 0;
@@ -68,16 +68,16 @@ const Footer = () => {
     return (
         <ThemeProvider theme={theme}>
             <Wrapper>
-                <LogoImage src={logo}/>
+                <LogoImage src={logo} />
                 <ContentBox>
                     <SmallContent>시동,Siidong</SmallContent>
-                    <Line/>
+                    <Line />
                     <SmallContent>대표: 신동익</SmallContent>
-                    <Line/>
-                    <SmallContent>사업자등록번호: 754-22-01597</SmallContent><br/>
+                    <Line />
+                    <SmallContent>사업자등록번호: 754-22-01597</SmallContent><br />
                     <SmallContent>주소: 충청남도 아산시 배방읍 광장로 210, A동 1층 125호</SmallContent>
-                    <Line/>
-                    <SmallContent>이메일:siidong21@gmail.com</SmallContent><br/>
+                    <Line />
+                    <SmallContent>이메일:siidong21@gmail.com</SmallContent><br />
                     <SmallContent>COPYRIGHT2022@시동.ALL Right Reserved</SmallContent>
                 </ContentBox>
             </Wrapper>
